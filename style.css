@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c0c4d3;
+}
+
+nav {
+    background-color: #75aae6;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 12px;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.menu-item {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 25px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.menu-item::before, .menu-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+.menu-item::before {
+    top: 0; 
+    left: 50%;
+}
+
+.menu-item::after {
+    bottom: 0;
+    right: 50%;
+}
+
+.menu-item:hover::before, .menu-item:hover::after {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.menu-item:hover a {
+    color: #f0f0f0;
+}
+
+.about .tooltip, .ABT .tooltip-product {
+    display: none;
+    position: absolute;
+    background-color: #4d6077;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 40%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 20px;
+    text-align: center;
+    top: 400%;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.about:hover .tooltip, .ABT:hover .tooltip-product {
+    display: block;
+}
+
+.bot {
+    font-size: 50px;
+}
